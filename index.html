@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OWL Todo App</title>
+    <script src="owl.js"></script>
+  </head>
+  <body>
+    <h1>Owl</h1>
+    <p id="version"></p>
+    <script>
+      const { Component, mount, xml } = owl;
+        // Owl Components
+        class Root extends Component {
+              static template = xml`<div>todo app</div>`; 
+          }
+      mount(Root, document.body);
+    </script>
+  </body>
+</html>
